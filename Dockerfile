@@ -9,5 +9,4 @@ COPY . .
 RUN composer update
 
 RUN php artisan key:generate
-
-ENTRYPOINT ["php artisan serve"]
+CMD php artisan serve
