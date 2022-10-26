@@ -9,4 +9,4 @@ COPY . .
 RUN composer update
 
 RUN php artisan key:generate
-CMD php artisan serve
+#CMD php artisan serve
