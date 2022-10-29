@@ -9,4 +9,4 @@ COPY . .
 RUN composer update
 
 RUN php artisan key:generate
-ENTRYPOINT php artisan
+ENTRYPOINT php artisan migrate --seed
